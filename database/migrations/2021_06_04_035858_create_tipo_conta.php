@@ -31,32 +31,3 @@ class CreateTipoConta extends Migration
         Schema::dropIfExists('tipo_conta');
     }
 }
-/*
-<?php
-2021_06_04_034125_create_conta
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-class CreateConta extends Migration
-{
-    public function up()
-    {
-        Schema::create('conta', function (Blueprint $table) {
-            $table->id();
-            $table->integer("agencia");
-            $table->integer("user");
-            $table->decimal("saldo");
-            $table->timestamps();
-            $table->foreign('agencia')->references('id')->on('agencia');
-            $table->foreign('user')->references('id')->on('users');
-        });
-    }
-
-    public function down()
-    {
-        Schema::dropIfExists('conta');
-    }
-}
-
-*/
