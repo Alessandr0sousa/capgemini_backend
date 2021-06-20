@@ -15,12 +15,12 @@ class CreateAgencia extends Migration
     {
         Schema::create('agencia', function (Blueprint $table) {
             $table->id();
-            $table->integer("inst_bancancaria");
+            $table->unsignedBigInteger("inst_bancaria");
             $table->string("cod_ag");
             $table->char("cnpj", 14);
             $table->text("endereco");
             $table->timestamps();
-            $table->foreign('inst_bancancaria')->references('id')->on('inst_bancancarias');
+            $table->foreign('inst_bancaria')->references('id')->on('inst_bancarias');
         });
     }
 
