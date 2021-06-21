@@ -13,8 +13,8 @@ class BancosSeeder extends Seeder
     public function run()
     {
         DB::table('inst_bancarias')->insert([
-            'nome' => 'Capgemini',
-            'codigo' => '894',
+            'nome'      => 'Capgemini',
+            'codigo'    => '894',
         ]);
     }
 }
