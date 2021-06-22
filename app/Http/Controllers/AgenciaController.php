@@ -28,6 +28,6 @@ class AgenciaController extends Controller
     public function destroy($id)
     {
         $user = Agecia::findOrfail($id);
-        $user->update();
+        $user->delete();
     }
 }

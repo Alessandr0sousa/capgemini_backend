@@ -28,6 +28,6 @@ class TipoContaController extends Controller
     public function destroy($id)
     {
         $user = TipoConta::findOrfail($id);
-        $user->update();
+        $user->delete();
     }
 }

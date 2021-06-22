@@ -28,6 +28,6 @@ class InstBancariaController extends Controller
     public function destroy($id)
     {
         $user = InstBancaria::findOrfail($id);
-        $user->update();
+        $user->delete();
     }
 }
